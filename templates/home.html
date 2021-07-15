@@ -10,6 +10,10 @@
     <input type="text" name="city" placeholder="weather search">
     <input type="submit" value="submit">
 </form>
+
+<h2>Current weather</h2>
+<p>City: <b>{{weather.city}}, {{weather.country}}</b></p>
+    <p>{{weather.description}}|{{weather.temperature}}&#8451;</p>
 <h1>Currency</h1>
 
 <form>
@@ -34,9 +38,7 @@
 </form>
 
 
-    <h2>Current weather</h2>
-<p>City: <b>{{weather.city}}, {{weather.country}}</b></p>
-    <p>{{weather.description}}|{{weather.temperature}}&#8451;</p>
+
     {% for article in articles %}
         <a href="{{article.link}}"><b>{{article.title}}</b></a><br>
         <i>{{article.published}}</i><br>
